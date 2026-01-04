@@ -203,7 +203,7 @@ def get_rules_keyboard():
 def format_anketa(data):
     return f"""
     
-[📝АНКЕТА ПЕРСОНАЖА ]
+║ 📝АНКЕТА ПЕРСОНАЖА ║
  
 
 🎮 Игровой ник: {data['nickname']}
@@ -232,7 +232,7 @@ async def cmd_start(message: Message, state: FSMContext):
     
     welcome = """
 
-║ 🎮 WIXYEEZ FAMILY 🎮    ║
+║ 🎮 WIXYEEZ FAMILY 🎮 ║
 
 
 👋 Добро пожаловать!
