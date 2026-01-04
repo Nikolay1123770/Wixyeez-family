@@ -25,7 +25,7 @@ logging.basicConfig(level=logging.INFO)
 # ============ НАСТРОЙКИ ============
 BOT_TOKEN = "8388656767:AAGSolSzttm1oaLGF2Hn0oSA7m1poz18WDc"  # ← ЗАМЕНИТЕ НА СВОЙ ТОКЕН!
 GROUP_ID = -1003599580759
-RULES_LINK = "https://t.me/c/3599580759/4"
+RULES_LINK = "https://t.me/+f_SxmqqvP-81ODcx"
 
 # Проверка токена
 if BOT_TOKEN == "ВАШ_ТОКЕН_БОТА" or len(BOT_TOKEN) < 40:
