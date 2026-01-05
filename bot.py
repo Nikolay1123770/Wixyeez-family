@@ -195,7 +195,7 @@ def get_cancel_keyboard():
 
 def get_rules_keyboard():
     return InlineKeyboardMarkup(inline_keyboard=[
-        [InlineKeyboardButton(text="📜 Читать правила", url=RULES_LINK)]
+        [InlineKeyboardButton(text="👉Войти в группу", url=RULES_LINK)]
     ])
 
 # ============ ФОРМАТИРОВАНИЕ АНКЕТЫ ============
@@ -352,7 +352,7 @@ async def process_marital(message: Message, state: FSMContext):
         )
         
         keyboard = InlineKeyboardMarkup(inline_keyboard=[
-            [InlineKeyboardButton(text="📜 Прочитать правила!", url=RULES_LINK)]
+            [InlineKeyboardButton(text="👉Войти в группу", url=RULES_LINK)]
         ])
         
         await message.answer(
@@ -401,11 +401,11 @@ async def delete_anketa(message: Message):
 
 # ============ ПРАВИЛА ============
 
-@dp.message(F.text == "📜 Правила")
+@dp.message(F.text == "👉Войти в группу")
 async def show_rules(message: Message):
     if message.chat.type != "private":
         return
-    await message.answer("📜 Правила семьи:", reply_markup=get_rules_keyboard())
+    await message.answer("👉Войти в группу:", reply_markup=get_rules_keyboard())
 
 # ============ ПОМОЩЬ ============
 
